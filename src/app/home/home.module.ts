@@ -20,4 +20,11 @@ import { HomePage } from './home.page';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+  noGuests: string;
+  name: string;
+
+  printJson(noGuests: string, name: string) {
+    console.log(noGuests);
+  }
+}

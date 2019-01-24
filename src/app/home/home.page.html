@@ -1,12 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-item>
+  <ion-label position="floating" >No on Guests</ion-label>
+  <ion-input #noGuests></ion-input>
+</ion-item>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-</ion-content>
+<ion-item>
+  <ion-label position="floating" >Name</ion-label>
+  <ion-input #name></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating" >Phone</ion-label>
+  <ion-input #phone></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating" >Email ID</ion-label>
+  <ion-input #mailid></ion-input>
+</ion-item>
+
+<ion-button (click)="printJson(noGuests.value, name.value, phone.value, mailid.value)">Get Value</ion-button>
