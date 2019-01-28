@@ -15,6 +15,8 @@ export class HomePage {
    updateItem () {
      if(this.toggle1 && this.toggle2 && this.toggle3) {
        // do the function
+
+       console.log('Hello');
      }
    }
   // object : Object
