@@ -1,4 +1,4 @@
-<ion-item>
+<!-- <ion-item>
   <ion-label position="floating" >No on Guests</ion-label>
   <ion-input #noGuests></ion-input>
 </ion-item>
@@ -18,4 +18,23 @@
   <ion-input #mailid></ion-input>
 </ion-item>
 
-<ion-button (click)="printJson(noGuests.value, name.value, phone.value, mailid.value)">Get Value</ion-button>
+
+
+<ion-button (click)="printJson(noGuests.value, name.value, phone.value, mailid.value)">Get Value</ion-button> -->
+
+<ion-list>
+  <ion-item>
+    <ion-label>Pepperoni</ion-label>
+    <ion-toggle [(ngModel)]="toggle1" (ionChange)="updateItem()" ></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sausage</ion-label>
+    <ion-toggle [(ngModel)]="toggle2" (ionChange)="updateItem()"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mushrooms</ion-label>
+    <ion-toggle [(ngModel)]="toggle3" (ionChange)="updateItem()"></ion-toggle>
+  </ion-item>
+</ion-list>
